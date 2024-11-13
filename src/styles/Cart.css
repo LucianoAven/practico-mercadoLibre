@@ -1,0 +1,49 @@
+.cart-container {
+  max-width: 800px; /* Ancho máximo al que puede extenderse un elemento */
+  margin: 0 auto; /* Margen que se ocupará en cada dirección del elemento */
+  padding: 20px; /* Posición del elemento en el frontend de la pantalla */
+}
+
+.cart-item-info {
+  display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+  align-items: center; /* Centra los elementos en el medio de la pantalla */
+  gap: 10px;
+  flex: 1;
+}
+
+.cart-item-image {
+  width: 60px !important; /* Ancho del elemento */
+  height: 60px !important; /* Alto del elemento */
+  object-fit: cover !important;
+  border-radius: 5px !important; /* Grosor del borde de los elementos */
+}
+
+.cart-item-details {
+  display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+  flex-direction: column;
+  flex: 1;
+}
+
+.cart-item-actions {
+  display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+  align-items: center; /* Centra los elementos en el medio de la pantalla */
+  gap: 10px;
+}
+
+.cart-item-actions input[type="number"] {
+  width: 60px; /* Ancho del elemento */
+  text-align: center; /* Centra el texto que se encuentra dentro del contenedor */
+}
+
+.cart-item-actions p {
+  margin: 0; /* Margenes del elemento */
+  min-width: 100px; /* Especifica el ancho mínimo que debe poseer el elemento por defecto */
+  text-align: right; /* Especifica la posición del texto que se encuentra dentro del contenedor */
+}
+
+.cart-item {
+  display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+  align-items: center; /* Centra los elementos en el medio de la pantalla */
+  justify-content: space-between; /* Ordena los elementos para que ocupen todo el espacio */
+  gap: 10px;
+}

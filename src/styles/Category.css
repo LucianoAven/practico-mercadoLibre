@@ -1,0 +1,50 @@
+.category-list-container {
+  display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+  flex-wrap: wrap;
+  justify-content: center; /* Ordena los elementos para que ocupen todo el espacio */
+  gap: 20px;
+}
+
+.category-item {
+  display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+  flex-direction: column;
+  justify-content: space-between; /* Ordena los elementos para que ocupen todo el espacio */
+  align-items: center; /* Centra los elementos que se encuentren dentro del contenedor */
+  border: 1px solid #ddd; /* Color, sombra y grosor del contorno */
+  border-radius: 10px; /* Grosor del contorno */
+  padding: 10px; /* Posición del elemento en el frontend de la ventana */
+  margin: 10px; /* Especifica los margenes que ocupará el elemento */
+  width: 200px; /* Ancho fijo para todas las tarjetas */
+  height: 350px; /* Altura fija para todas las tarjetas */
+  background-color: #fff; /* Color del fondo del elemento */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Transparencia del contorno */
+  overflow: hidden; /* Recortar el contenido que exceda la altura */
+}
+
+.category-item img {
+  width: 100%; /* Especifica el ancho del elemento */
+  height: auto; /* Especifica el alto del elemento */
+  max-height: 150px; /* Altura máxima de la imagen */
+  object-fit: cover; /* Recortar la imagen si es necesario */
+}
+
+.category-item-title {
+  font-size: 1em;
+  margin: 10px 0; /* Especifica los margenes que ocupará el elemento */
+  text-align: center; /* Centra el texto que se encuentra dentro del contenedor */
+}
+
+.category-item-button {
+  padding: 10px 20px; /* Posición del elemento en el frontend de la ventana */
+  background-color: #007bff; /* Color del fondo del elemento */
+  color: white; /* Modifica el color del texto */
+  border: none; /* Elimina el contorno del elemento */
+  border-radius: 5px; /* Grosor del contorno */
+  cursor: pointer; /* Modifica la imagen del cursor cuando se encuentra posicionado en el elemento */
+  text-align: center; /* Centra el texto que se encuentra dentro del contenedor */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.category-item-button:hover {
+  background-color: #0056b3; /* Color del fondo del elemento */
+}

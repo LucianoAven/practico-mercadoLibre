@@ -1,0 +1,54 @@
+/* src/pages/CheckoutPage.css */
+
+.checkout-page {
+    max-width: 800px; /* Ancho máximo al que puede ampliarse un elemento */
+    margin: 0 auto; /* Especifica los margenes que ocupará el elemento */
+    padding: 20px; /* Posición del elemento en el frontend del proyecto */
+}
+
+.product-list {
+    list-style: none;
+    padding: 0; /* Posición del elemento en la ventana exterior */
+}
+
+.product-item {
+    display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+    align-items: center; /* Centra los elementos que se encuentren dentro del contenedor */
+    margin-bottom: 10px; /* Especifica el margen inferior que ocupará el contener */
+}
+
+.product-image {
+    width: 50px; /* Especifica el ancho del elemento */
+    height: 50px; /* Especifica el alto del elemento */
+    object-fit: cover;
+    margin-right: 10px; /* Especifica el margen del lateral derecho que ocupará el contener */
+}
+
+.product-details {
+    display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+    flex-direction: column; /* Organiza los elementos en columnas */
+}
+
+.shipping-form {
+    display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+    flex-wrap: wrap;
+}
+
+.form-group {
+    flex: 1 1 45%;
+    margin: 10px; /* Especifica los margenes que ocupará el elemento */
+}
+
+.checkout-button {
+    background-color: #007bff; /* Color del fondo del contenedor */
+    color: #fff; /* Color de los elementos que se encuentren dentro del contenedor */
+    border: none; /* Elimina el contorno del elemento */
+    padding: 10px 20px; /* Posición del elemento en la ventana superior */
+    cursor: pointer; /* Modifica la imagen del cursor cuando se encuentra posicionado en el elemento */
+    font-size: 16px;
+    margin-top: 20px; /* Especifica el margen superior que ocupará el contener */
+}
+
+.checkout-button:hover {
+    background-color: #0056b3; /* Color del fondo del elemento */
+}

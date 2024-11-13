@@ -1,0 +1,45 @@
+/* Estilos del modal de confirmación */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Especifica el ancho del elemento */
+  height: 100%; /* Especifica el alto del elemento */
+  background: rgba(0, 0, 0, 0.5); /* Establece el color que poseerán por defecto los elementos dentro del contenedor */
+  display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+  justify-content: center; /* Centra el contenedor en la pantalla */
+  align-items: center; /* Centra los elementos que se encuentren dentro del contenedor */
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #fff; /* Establece el color que poseerán por defecto los elementos dentro del contenedor */
+  padding: 20px; /* Posición del elemento en la ventana exterior */
+  border-radius: 5px; /* Grosor del contorno */
+  width: 400px; /* Especifica el ancho del elemento */
+  text-align: center; /* Centra el texto que se encuentra dentro del contenedor */
+  position: relative; /* Se posiciona debajo del elemento que tenga el comando "absolute" */
+}
+
+.modal-close {
+  background: none; /* Elimina el color del fondo */
+  border: none; /* Elimina el contorno del elemento */
+  font-size: 20px; /* Establece el tamaño de letra */
+  position: absolute; /* Se posiciona encima del elemento que tenga el comando "relative" */
+  top: 10px;
+  right: 10px;
+  cursor: pointer; /* Modifica la imagen del cursor cuando se encuentra posicionado en el elemento */
+}
+
+.modal-actions {
+  display: flex; /* Alinea los elementos almacenadas en el contenedor de forma horizontal */
+  flex-direction: column; /* Organiza los elementos en columnas */
+  gap: 10px;
+}
+
+.modal-actions button {
+  padding: 10px 20px; /* Posición del elemento en la ventana superior */
+  cursor: pointer; /* Modifica la imagen del cursor cuando se encuentra posicionado en el elemento */
+  width: 100%; /* Especifica el ancho del elemento */
+  font-size: 16px; /* Establece el tamaño de letra */
+}
